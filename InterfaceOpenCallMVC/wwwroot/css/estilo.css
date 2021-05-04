@@ -1,0 +1,422 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.iconeClick {
+    width: 68px;
+}
+
+.corpoMenu {
+    display: none;
+    /*
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    */
+    
+    
+    left: 0%;
+    top: 0%;
+    font-weight: bolder;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.corpoItens {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: #8B8B8B;
+    width: 100%;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.corpoItens div {
+    padding-top: 10px;
+    background-color: rgba(0, 0, 0, 0.178);
+}
+
+
+.header {
+    background-color: #8B8B8B;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    font-family: Courier New;
+    font-weight: bolder;
+}
+
+.logo {
+    color: #FFFFFF;
+    padding-left: 45px;
+}
+
+.nav-menu {
+    padding-right: 45px;
+}
+
+.btn-sair {
+    color: #8B8B8B;
+    background-color: #E7E7E7;
+    width: 75px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+}
+
+.input-btn {
+    border: none;
+    background-color: #E7E7E7;
+    font-weight: bolder;
+    color: #8B8B8B;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    text-transform: uppercase;
+    color: #8B8B8B;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-family: Courier New;
+    font-weight: bolder;
+    font-size: 35px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    height: 64px;
+    width: 440px;
+    margin-top: 40px;
+    border-radius: 5px;
+    border: 1px solid #CBCBCB;
+    padding-left: 20px;
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.button {
+    height: 64px;
+    width: 440px;
+    margin-top: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: #CBCBCB;
+    padding-left: 20px;
+    font-size: 22px;
+    font-weight: bolder;
+    color: #FFF;
+    font-size: 35px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+
+.corpo {
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #8b8b8b86;
+    display: none;
+}
+
+.displayShow {
+    display: inline;
+}
+
+.displayHidden {
+    display: none;
+}
+
+.calcelar {
+    font-size: 20px;
+    font-weight: bold;
+    color: #8B8B8B;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.nova-tarefa {
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFF;
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    width: 760px;
+    height: 415px;
+    border-radius: 50px;
+}
+
+
+.btn-nova-tarefa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    left: 85%;
+    top: 70%;
+    font-size: 200px;
+    font-weight: bolder;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #8B8B8B;
+}
+
+
+
+.input-novatarefa {
+    background-color: #E7E7E7;
+    border: none;
+    border-radius: 10px;
+    height: 100px;
+    width: 600px;
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.input-adicionar {
+    background-color: #8B8B8B;
+    width: 230px;
+    height: 60px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 35px;
+    font-weight: bolder;
+    color: #FFF;
+
+}
+
+.displaynone{
+    display: none;
+}
+
+.h1 {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #8B8B8B;
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+
+table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+tbody div {
+    width: 640px;
+    border-top: 10px solid #8B8B8B;
+}
+
+.btn-editar-teste {
+    padding-right: 16px;
+    cursor: pointer;
+}
+
+.btn-excluir-teste {
+    cursor: pointer;
+}
+
+tbody div tr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+td {
+    font-size: 22px;
+    font-weight: bold;
+    color: #8B8B8B;
+    padding: 40px;
+}
+
+
+@media (max-width: 1024px)
+{
+    .nova-tarefa {
+        left: 12%;
+    }
+
+}
+
+
+@media (max-width: 768px)
+{
+    .nova-tarefa {
+        left: 2%;
+        width: 740px;
+    }
+
+}
+
+
+@media (max-width: 500px)
+{
+  .input {
+      width: 330px;
+  }
+
+  .button{
+      width: 330px;
+  }
+
+  .title {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .btn-nova-tarefa {
+    left: 80%;
+    top: 80%;
+    font-size: 120px;
+  }
+
+  tbody div {
+      width: 375px;
+  }
+
+.nova-tarefa {
+    left: 8%;
+    width:355px;
+}
+
+.input-novatarefa {
+    width:335px;
+    font-size: 21px;
+}
+
+}
+
+@media (max-width: 375px)
+{
+    .nova-tarefa {
+        left: 3%;
+        width:355px;
+    }
+
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.quadradoChamado {
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    margin-bottom: 5px;   
+}
+
+.borda {
+    border: 1px solid #707070;
+}
+
+.quadradoChamadoFotoNome {
+    width: 30%;
+}
+
+.fotoPerfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.imgperfil {
+    padding-top: 5px;
+    width: 50%;
+}
+
+.nomeUsuario {
+    padding-top: 5px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.quadradoDireitaChamado {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.textoDoChamado {
+    margin: 10px 0 0 10px;
+    font-size: 22px;
+}
+
+.chamadoEndereco {
+    flex: 1;
+}
+
+.chamadoDescricao {
+    flex: 1;
+}
+
+.chamadoData {
+    flex: 1;
+}
+
+.chamadoStatus {
+    flex: 1;
+}
+
+.quadradoDireitaFotoStatus {
+    display: flex;
+    justify-content: center;
+}
+
+.divDaFotoStatus {
+    padding: 5px 0 0 5px;
+}
+
+.fotoChamado {
+    width: 50px;
+}
+
+@media (max-width: 414px)
+{
+    .imgperfil {
+        width: 100%;
+    }
+
+    .textoDoChamado {
+        margin: 10px 0 0 5px;
+        font-size: 16px;
+    }
+
+}
