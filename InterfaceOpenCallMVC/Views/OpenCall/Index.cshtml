@@ -2,10 +2,13 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+    var chamados = Model;
 }
 
+<!--
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <meta charset="utf-8">
@@ -19,7 +22,10 @@
 <script>
         //load();
 </script>
+-->
+<!--
 <body>
+
     <header>
         <div id="mytop" class="header">
             <nav>
@@ -47,164 +53,173 @@
             </nav>
         </div>
     </header>
+    -->
 
-    <div class="h1">
-        <h1>Feed Chamados</h1>
-    </div>
+<div class="h1">
+    <h1>Feed Chamados</h1>
+</div>
 
-    <div class="body">
+<div class="body">
 
-        <div class="quadradoChamado borda">
+    @if (true)
+    {
+        foreach (var chamado in chamados)
+        {
+            <div class="quadradoChamado borda">
 
-            <div class="quadradoChamadoFotoNome">
-                <div class="fotoPerfil">
-                    <img class="imgperfil" src="~/img/perfil.png" />
+                <div class="quadradoChamadoFotoNome">
+                    <div class="fotoPerfil">
+                        <img class="imgperfil" src="~/img/perfil.png" />
+                    </div>
+                    <div>
+                        <strong><p class="nomeUsuario">Ciclano</p></strong>
+                    </div>
                 </div>
-                <div>
-                    <strong><p class="nomeUsuario">Ciclano</p></strong>
+
+                <div class="quadradoDireitaChamado">
+
+                    <div class="chamadoEndereco textoDoChamado ">
+                        Rua São Francisco Xavier, São Francisco Xavier N 935
+                    </div>
+
+                    <div class="chamadoDescricao textoDoChamado ">
+                        Rua está com alagada, uma tubulação estourou,
+                        parece da cedae, água não tem cheiro.
+                    </div>
+
+                    <div class="chamadoData textoDoChamado">
+                        07/04/2021 - 10:14:00
+                    </div>
+
+                    <div class="chamadoStatus textoDoChamado">
+                        Aberto
+                    </div>
+
                 </div>
+
+                <div class="quadradoDireitaFotoStatus">
+                    <div class="divDaFotoStatus">
+                        <img class="fotoChamado" src="img/TIPOS_DE_CHAMADOS/agua.png">
+                    </div>
+                </div>
+
+            </div>
+        }
+    }
+
+
+    <div class="quadradoChamado borda">
+
+        <div class="quadradoChamadoFotoNome">
+            <div class="fotoPerfil">
+                <img class="imgperfil" src="img/perfil.png" />
+            </div>
+            <div>
+                <strong><p class="nomeUsuario">Ciclano</p></strong>
+            </div>
+        </div>
+
+        <div class="quadradoDireitaChamado">
+
+            <div class="chamadoEndereco textoDoChamado ">
+                Rua São Francisco Xavier, São Francisco Xavier N 935
             </div>
 
-            <div class="quadradoDireitaChamado">
-
-                <div class="chamadoEndereco textoDoChamado ">
-                    Rua São Francisco Xavier, São Francisco Xavier N 935
-                </div>
-
-                <div class="chamadoDescricao textoDoChamado ">
-                    Rua está com alagada, uma tubulação estourou,
-                    parece da cedae, água não tem cheiro.
-                </div>
-
-                <div class="chamadoData textoDoChamado">
-                    07/04/2021 - 10:14:00
-                </div>
-
-                <div class="chamadoStatus textoDoChamado">
-                    Aberto
-                </div>
-
+            <div class="chamadoDescricao textoDoChamado ">
+                Rua está com alagada, uma tubulação estourou,
+                parece da cedae, água não tem cheiro.
             </div>
 
-            <div class="quadradoDireitaFotoStatus">
-                <div class="divDaFotoStatus">
-                    <img class="fotoChamado" src="img/TIPOS_DE_CHAMADOS/agua.png">
-                </div>
+            <div class="chamadoData textoDoChamado">
+                07/04/2021 - 10:14:00
+            </div>
+
+            <div class="chamadoStatus textoDoChamado">
+                Aberto
             </div>
 
         </div>
 
-        <div class="quadradoChamado borda">
-
-            <div class="quadradoChamadoFotoNome">
-                <div class="fotoPerfil">
-                    <img class="imgperfil" src="img/perfil.png" />
-                </div>
-                <div>
-                    <strong><p class="nomeUsuario">Ciclano</p></strong>
-                </div>
+        <div class="quadradoDireitaFotoStatus">
+            <div class="divDaFotoStatus">
+                <img class="fotoChamado" src="img/TIPOS_DE_CHAMADOS/agua.png">
             </div>
-
-            <div class="quadradoDireitaChamado">
-
-                <div class="chamadoEndereco textoDoChamado ">
-                    Rua São Francisco Xavier, São Francisco Xavier N 935
-                </div>
-
-                <div class="chamadoDescricao textoDoChamado ">
-                    Rua está com alagada, uma tubulação estourou,
-                    parece da cedae, água não tem cheiro.
-                </div>
-
-                <div class="chamadoData textoDoChamado">
-                    07/04/2021 - 10:14:00
-                </div>
-
-                <div class="chamadoStatus textoDoChamado">
-                    Aberto
-                </div>
-
-            </div>
-
-            <div class="quadradoDireitaFotoStatus">
-                <div class="divDaFotoStatus">
-                    <img class="fotoChamado" src="img/TIPOS_DE_CHAMADOS/agua.png">
-                </div>
-            </div>
-
-        </div>
-
-        <div class="quadradoChamado borda">
-
-            <div class="quadradoChamadoFotoNome">
-                <div class="fotoPerfil">
-                    <img class="imgperfil" src="img/perfil.png" />
-                </div>
-                <div>
-                    <strong><p class="nomeUsuario">Ciclano</p></strong>
-                </div>
-            </div>
-
-            <div class="quadradoDireitaChamado">
-
-                <div class="chamadoEndereco textoDoChamado ">
-                    Rua São Francisco Xavier, São Francisco Xavier N 935
-                </div>
-
-                <div class="chamadoDescricao textoDoChamado ">
-                    Rua está com alagada, uma tubulação estourou,
-                    parece da cedae, água não tem cheiro.
-                </div>
-
-                <div class="chamadoData textoDoChamado">
-                    07/04/2021 - 10:14:00
-                </div>
-
-                <div class="chamadoStatus textoDoChamado">
-                    Aberto
-                </div>
-
-            </div>
-
-            <div class="quadradoDireitaFotoStatus">
-                <div class="divDaFotoStatus">
-                    <img class="fotoChamado" src="img/TIPOS_DE_CHAMADOS/agua.png">
-                </div>
-            </div>
-
         </div>
 
     </div>
 
-    <div id="corpoAddTarefa" class="corpo">
-        <div class="nova-tarefa">
+    <div class="quadradoChamado borda">
 
-            <input class="input-novatarefa" type="text" id="Endereco" placeholder="Rua exemplo, nº, Bairro">
-            <input class="input-novatarefa" type="text" id="Descricao" placeholder="Descreva seu chamado...">
-
-            <select class="input-novatarefa" name="Tipo" id="Tipo">
-                <option value="água">Água</option>
-                <option value="esgoto">esgoto</option>
-                <option value="luz">luz</option>
-                <option value="convivência">convivência</option>
-                <option value="outro">outro</option>
-            </select>
-
-            <button class="input-adicionar" onclick="post()">Adicionar</button>
-            <div class="calcelar" onclick="EsconderAddTarefa()">Cancelar</div>
+        <div class="quadradoChamadoFotoNome">
+            <div class="fotoPerfil">
+                <img class="imgperfil" src="img/perfil.png" />
+            </div>
+            <div>
+                <strong><p class="nomeUsuario">Ciclano</p></strong>
+            </div>
         </div>
+
+        <div class="quadradoDireitaChamado">
+
+            <div class="chamadoEndereco textoDoChamado ">
+                Rua São Francisco Xavier, São Francisco Xavier N 935
+            </div>
+
+            <div class="chamadoDescricao textoDoChamado ">
+                Rua está com alagada, uma tubulação estourou,
+                parece da cedae, água não tem cheiro.
+            </div>
+
+            <div class="chamadoData textoDoChamado">
+                07/04/2021 - 10:14:00
+            </div>
+
+            <div class="chamadoStatus textoDoChamado">
+                Aberto
+            </div>
+
+        </div>
+
+        <div class="quadradoDireitaFotoStatus">
+            <div class="divDaFotoStatus">
+                <img class="fotoChamado" src="img/TIPOS_DE_CHAMADOS/agua.png">
+            </div>
+        </div>
+
     </div>
 
-    <a href="#mytop">
-        <div div="btn-mais" onclick="MostrarAddTarefa()" class="btn-nova-tarefa">
-            +
-        </div>
-    </a>
+</div>
 
-    <script src="js/script.js">
-    </script>
-    <script>
-            get();
-    </script>
+<div id="corpoAddTarefa" class="corpo">
+    <div class="nova-tarefa">
+
+        <input class="input-novatarefa" type="text" id="Endereco" placeholder="Rua exemplo, nº, Bairro">
+        <input class="input-novatarefa" type="text" id="Descricao" placeholder="Descreva seu chamado...">
+
+        <select class="input-novatarefa" name="Tipo" id="Tipo">
+            <option value="água">Água</option>
+            <option value="esgoto">esgoto</option>
+            <option value="luz">luz</option>
+            <option value="convivência">convivência</option>
+            <option value="outro">outro</option>
+        </select>
+
+        <button class="input-adicionar" onclick="post()">Adicionar</button>
+        <div class="calcelar" onclick="EsconderAddTarefa()">Cancelar</div>
+    </div>
+</div>
+
+<a href="#mytop">
+    <div div="btn-mais" onclick="MostrarAddTarefa()" class="btn-nova-tarefa">
+        +
+    </div>
+</a>
+<!--
+<script src="js/script.js">
+</script>
+<script>
+    get();
+</script>
 </body>
 </html>
+-->

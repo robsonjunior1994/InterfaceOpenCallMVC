@@ -20,7 +20,8 @@ namespace InterfaceOpenCallMVC.Controllers
 
         public IActionResult Index()
         {
-            return RedirectToAction("index", "opencall");
+
+            return RedirectToAction("Login", "opencall");
         }
 
         public IActionResult Privacy()
